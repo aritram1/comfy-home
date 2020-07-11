@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 All Devices
+  ul
+    //- each val in [1, 2, 3, 4, 5]
+    //-   li= val
+    each device in info
+      p= device.name
