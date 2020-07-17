@@ -38,6 +38,7 @@ router.get('/joystick', function(req, res, next) {
         }
         else{
             console.log(err, 'Please try after some time!!');
+            res.send(err);
         }
          
     });

@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var apiRouter = require('./routes/api/api');
 var devicesRouter = require('./routes/api/devices');
+var j5Router = require('./routes/api/j5');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api', apiRouter);
 app.use('/devices', devicesRouter);
+app.use('/j5', j5Router);
 
 
 // catch 404 and forward to error handler
