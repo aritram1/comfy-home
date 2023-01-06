@@ -5,7 +5,7 @@
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecureBearSSL.h>
-#include <ArduinoJson.h>
+#include <ArduinoJson.h> // or the name could be in CAPS Arduino_JSON.h
 
 // The Wifi details
 const char* SSID = "Someplace Else 2.4G";
