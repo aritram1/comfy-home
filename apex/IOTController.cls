@@ -9,13 +9,13 @@ public with sharing class IOTController{
         for(IOTEvent__e ev : iotPlatformEvents){
             if(String.isNotBlank(ev.Payload__c)){
                 IOT_Data__c data = new IOT_Data__c();
+                dMap.clear();
                 for(String each : ev.Payload__c.split('__')){
                     System.debug('Each is=>' + each);
                     String field = each.split('-')[0] + '__c';
                     Integer value = Integer.valueOf(each.split('-')[1]);
                     data.put(field, value);
-                    dMap.clear();
-                    dMap.put(field, value);
+                    dMap.put(each.split('-')[0], value);
                 }
                 
                 data.Payload__c = JSON.serializePretty(dMap);
