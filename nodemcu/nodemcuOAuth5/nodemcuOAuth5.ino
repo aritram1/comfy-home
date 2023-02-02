@@ -24,9 +24,9 @@ uint8_t PARAM_SENSOR_VALUE_D3 = 0;
 // Define oAuth2 paramaters
 String grant_type = "password";
 String username = "aritram1@gmail.com.lwc";
-String password = "Aritra1985###";
-String client_id = "3MVG9n_HvETGhr3DyoS1cwXsp_QLSbEuBw91e.8OZ0i6y0DyMjtzTSMeAUuYnuDPEOCdFiAdRiXfWGj142YcO";
-String client_secret = "EC6519F8A1A239EBD4DB506643A7AD494C8BB7AC4206E9AA0784B0D76C9C3F2E";
+String password = "*****"; //masked
+String client_id = "***"; //masked
+String client_secret = "***"; //masked
 String TOKEN_ENDPOINT = "https://login.salesforce.com/services/oauth2/token";
 String IOT_PLATFORMEVENT_ENDPOINT = "https://lwc-aritra-dev-ed.my.salesforce.com/services/data/v56.0/sobjects/IOTEvent__e";
 const uint8_t fingerprintForToken[20] = { 0xAE, 0x3D, 0xDC, 0x91, 0xBA, 0x5C, 0x54, 0x6D, 0x79, 0x1C, 0x7F, 0x72, 0xB8, 0xB4, 0xC8, 0x91, 0x4B, 0xC8, 0x29, 0x61 };
